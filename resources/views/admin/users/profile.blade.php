@@ -21,8 +21,8 @@
 					</a>
 				</div>
 				<div class="col ml-md-n2 profile-user-info">
-					<h4 class="user-name mb-0">{{auth()->user()->name}}</h4>
-					<h6 class="text-muted">{{auth()->user()->email}}</h6>
+					<h4 class="user-name mb-0">Super Admin</h4>
+					<h6 class="text-muted">u2181583@uel.ac.uk</h6>
 				</div>
 
 			</div>
@@ -53,12 +53,12 @@
 								</h5>
 								<div class="row">
 									<p class="col-sm-2 text-muted text-sm-right mb-0 mb-sm-3">Name</p>
-									<p class="col-sm-10">{{auth()->user()->name}}</p>
+									<p class="col-sm-10">Umair Nauman</p>
 								</div>
 
 								<div class="row">
 									<p class="col-sm-2 text-muted text-sm-right mb-0 mb-sm-3">Email ID</p>
-									<p class="col-sm-10">{{auth()->user()->email}}</p>
+									<p class="col-sm-10">u2181583@uel.ac.uk</p>
 								</div>
 
 								<div class="row">

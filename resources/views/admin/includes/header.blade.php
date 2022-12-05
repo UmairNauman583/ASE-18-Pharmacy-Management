@@ -4,10 +4,10 @@
 	<!-- Logo -->
 	<div class="header-left">
 		<a href="{{route('dashboard')}}" class="logo">
-			<img src="@if(!empty(AppSettings::get('logo'))) {{asset('storage/'.AppSettings::get('logo'))}} @else{{asset('assets/img/logo.png')}} @endif" alt="Logo">
+			<img src="@if(!empty(AppSettings::get('logo'))) {{asset('storage/'.AppSettings::get('logo'))}} @else{{asset('assets/img/asegroup.jpg')}} @endif" alt="Logo">
 		</a>
 		<a href="{{route('dashboard')}}" class="logo logo-small">
-			<img src="{{asset('assets/img/logo-small.png')}}" alt="Logo" width="30" height="30">
+			<img src="{{asset('assets/img/asegroup.jpg')}}" alt="Logo" width="30" height="30">
 		</a>
 	</div>
 	<!-- /Logo -->
@@ -76,15 +76,15 @@
 		<!-- User Menu -->
 		<li class="nav-item dropdown has-arrow">
 			<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-				<span class="user-img"><img class="rounded-circle" src="{{!empty(auth()->user()->avatar) ? asset('storage/users/'.auth()->user()->avatar): asset('assets/img/avatar.png')}}" width="31" alt="avatar"></span>
+				<span class="user-img"><img class="rounded-circle" src="{{asset('assets/img/avatar.png')}}" width="31" alt="avatar"></span>
 			</a>
 			<div class="dropdown-menu">
 				<div class="user-header">
 					<div class="avatar avatar-sm">
-						<img src="{{!empty(auth()->user()->avatar) ? asset('storage/users/'.auth()->user()->avatar): asset('assets/img/avatar.png')}}" alt="User Image" class="avatar-img rounded-circle">
+						<img src="{{asset('assets/img/avatar.png')}}" alt="User Image" class="avatar-img rounded-circle">
 					</div>
 					<div class="user-text">
-						<h6>{{auth()->user()->name}}</h6>
+						<h6>Super Admin!</h6>
 					</div>
 				</div>
 				
@@ -106,3 +106,9 @@
 	
 </div>
 <!-- /Header -->
+
+<style>
+.avatar-sm .user-text h6 {
+	line-height: 250%;
+}
+</style>	
